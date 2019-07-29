@@ -133,12 +133,19 @@ html {
   font-size: 62.5%;
   height: 100%;
 }
+body {
+  width: 100%;
+  margin: 0 auto;
+}
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+a,
+button {
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
 }
 h1 {
   font-size: 3.2rem;
@@ -151,7 +158,55 @@ p {
   font-size: 1.8rem;
   font-family: 'Roboto', sans-serif;
 }
+a {
+  text-decoration: none;
+  font-size: 2.1rem;
+}
+button {
+  font-size: 2.1rem;
+}
 img {
   max-width: 100%;
   height: auto;
+}
+.navigation {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation .logo {
+  margin-left: 2%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+}
+.navigation .logo h1 {
+  color: #78C885;
+  font-family: Raleway;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.navigation .nav-links {
+  margin-right: 2%;
+  display: flex;
+  align-items: flex-end;
+}
+.navigation .nav-links a {
+  color: #258D79;
+  margin-left: 10px;
+}
+.navigation .nav-links .sign-in {
+  color: #258D79;
+  background-color: white;
+  border: 1px solid #258D79;
+  border-radius: 2px;
+  padding: 5px 24px;
+}
+.navigation .nav-links .sign-up {
+  color: white;
+  background-color: #258D79;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 24px;
 }

@@ -1,0 +1,39 @@
+.navigation {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        margin-left: 2%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+
+        h1 {
+            color: @seagreen;
+            font-family: Raleway;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    }
+
+    .nav-links {
+        margin-right: 2%;
+        display: flex;
+        align-items: flex-end;
+
+        a {
+            color: @teal;
+            margin-left: 10px;
+        }
+
+        .sign-in {
+            .button(@teal, white, 1px solid @teal, 2px, 5px 24px);
+        }
+
+        .sign-up {
+            .button(white, @teal, none, 2px, 5px 24px);
+        }
+    }
+}
