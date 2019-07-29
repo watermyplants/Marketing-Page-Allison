@@ -211,3 +211,41 @@ img {
   border-radius: 2px;
   padding: 5px 24px;
 }
+footer {
+  background-color: #556E64;
+  color: white;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+footer p {
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+footer a {
+  color: white;
+  margin-left: 10px;
+  font-weight: unset;
+}
+footer .contact {
+  margin-bottom: 20px;
+}
+footer .contact address {
+  margin-bottom: 10px;
+}
+footer .contact .phone-nums p {
+  font-size: 1rem;
+}
+footer .copyright {
+  align-self: flex-end;
+}
+footer .links div {
+  display: flex;
+  justify-content: space-around;
+}
+footer .links .social {
+  margin: 15px 0;
+}
+footer .links .info-links a {
+  font-size: 1rem;
+}
