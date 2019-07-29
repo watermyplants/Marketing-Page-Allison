@@ -1,5 +1,12 @@
 // Home page styles
 .cta-top {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background: linear-gradient(119.38deg, #99DE99 0%, #258D79 100%);
+
+    h1, h2 {
+        color: white;
+    }
 
     .cta {
         display: flex;
@@ -8,9 +15,18 @@
     }
 
     .cta-text {
+        margin-left: 1%;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        button {
+            .button(@gray, @yellow, none, 39px, 18px 48px)
+        }
     }
 
     .features {
