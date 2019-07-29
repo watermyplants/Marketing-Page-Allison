@@ -249,3 +249,36 @@ footer .links .social {
 footer .links .info-links a {
   font-size: 1rem;
 }
+.cta-top .cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cta-top .cta-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cta-top .features {
+  text-align: center;
+}
+.cta-top .feature-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonials {
+  text-align: center;
+}
+.testimonials .quotes {
+  display: flex;
+  align-items: flex-start;
+}
+.testimonials .quotes .qb2 {
+  align-self: flex-end;
+}
+.cta-bottom {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
