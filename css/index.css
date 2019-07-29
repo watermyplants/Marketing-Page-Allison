@@ -183,9 +183,10 @@ img {
 .navigation .logo h1 {
   color: #78C885;
   font-family: Raleway;
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-weight: bold;
   margin-left: 5px;
+  line-height: 42px;
 }
 .navigation .nav-links {
   margin-right: 2%;
