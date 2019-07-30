@@ -85,13 +85,16 @@
     padding: 80px 0 50px;
     color: @darkgray;
 
-    // TEMP
     @media @phone {
-        display: none;  
+        padding: 5rem 0 0;
     }
     
     h2 {
         color: @seagreen;
+
+        @media @phone {
+            margin-bottom: 6rem;
+        }
     }
 
     p {
@@ -109,8 +112,14 @@
         justify-content: space-evenly;
         align-items: flex-start;
 
+        @media @phone {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
         .qb1 {
-            
+
             p {
                 max-width: 270px;
                 .relative(-145px, 40px);
@@ -126,14 +135,26 @@
             p {
                 max-width: 270px;
                 .relative(-50px, 40px);
+
+                @media @phone {
+                    .relative(-150px, 40px);
+                }
             }
 
             .bubble {
                 .relative(100px, 0);
+
+                @media @phone {
+                    position: unset;
+                }
             }
 
             .portrait {
                 .relative(10px, 100px);
+
+                @media @phone {
+                    .relative(-80px, 100px);
+                }
             }
         }
 
@@ -146,6 +167,10 @@
 
             .portrait {
                 .relative(-115px, 40px);
+
+                @media @phone {
+                    .relative(-100px, 40px);
+                }
             }
         }
     }

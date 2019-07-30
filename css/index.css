@@ -403,11 +403,16 @@ footer .links .info-links a {
 }
 @media (max-width: 500px) {
   .testimonials {
-    display: none;
+    padding: 5rem 0 0;
   }
 }
 .testimonials h2 {
   color: #78C885;
+}
+@media (max-width: 500px) {
+  .testimonials h2 {
+    margin-bottom: 6rem;
+  }
 }
 .testimonials p {
   font-size: 1.4rem;
@@ -421,6 +426,13 @@ footer .links .info-links a {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+}
+@media (max-width: 500px) {
+  .testimonials .quotes {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
 .testimonials .quotes .qb1 p {
   max-width: 270px;
@@ -439,15 +451,34 @@ footer .links .info-links a {
   top: -50px;
   left: 40px;
 }
+@media (max-width: 500px) {
+  .testimonials .quotes .qb2 p {
+    position: relative;
+    top: -150px;
+    left: 40px;
+  }
+}
 .testimonials .quotes .qb2 .bubble {
   position: relative;
   top: 100px;
   left: 0;
 }
+@media (max-width: 500px) {
+  .testimonials .quotes .qb2 .bubble {
+    position: unset;
+  }
+}
 .testimonials .quotes .qb2 .portrait {
   position: relative;
   top: 10px;
   left: 100px;
+}
+@media (max-width: 500px) {
+  .testimonials .quotes .qb2 .portrait {
+    position: relative;
+    top: -80px;
+    left: 100px;
+  }
 }
 .testimonials .quotes .qb3 p {
   max-width: 320px;
@@ -459,6 +490,13 @@ footer .links .info-links a {
   position: relative;
   top: -115px;
   left: 40px;
+}
+@media (max-width: 500px) {
+  .testimonials .quotes .qb3 .portrait {
+    position: relative;
+    top: -100px;
+    left: 40px;
+  }
 }
 .cta-bottom {
   background-color: #258D79;
