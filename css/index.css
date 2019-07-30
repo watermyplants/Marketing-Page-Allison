@@ -170,18 +170,22 @@ img {
   max-width: 100%;
   height: auto;
 }
-.navigation {
-  margin: 40px 0;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navigation .container {
+  margin: 40px auto;
   display: flex;
   justify-content: space-between;
 }
-.navigation .logo {
+.navigation .container .logo {
   margin-left: 2%;
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-end;
 }
-.navigation .logo h1 {
+.navigation .container .logo h1 {
   color: #78C885;
   font-family: Raleway;
   font-size: 3.6rem;
@@ -189,23 +193,23 @@ img {
   margin-left: 5px;
   line-height: 42px;
 }
-.navigation .nav-links {
+.navigation .container .nav-links {
   margin-right: 2%;
   display: flex;
   align-items: flex-end;
 }
-.navigation .nav-links a {
+.navigation .container .nav-links a {
   color: #258D79;
   margin-left: 10px;
 }
-.navigation .nav-links .sign-in {
+.navigation .container .nav-links .sign-in {
   color: #258D79;
   background-color: white;
   border: 1px solid #258D79;
   border-radius: 2px;
   padding: 5px 24px;
 }
-.navigation .nav-links .sign-up {
+.navigation .container .nav-links .sign-up {
   color: white;
   background-color: #258D79;
   border: none;
@@ -215,9 +219,7 @@ img {
 footer {
   background-color: #556E64;
   color: white;
-  padding: 2%;
-  display: flex;
-  justify-content: space-between;
+  padding: 20px 2% 12px;
 }
 footer p {
   line-height: 1.7;
@@ -227,6 +229,10 @@ footer a {
   color: white;
   margin-left: 10px;
   font-weight: unset;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
 }
 footer .contact {
   margin-bottom: 20px;
@@ -262,7 +268,7 @@ footer .links .info-links a {
 .cta-top .cta {
   margin-bottom: 70px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .cta-top .cta-text {
@@ -273,6 +279,7 @@ footer .links .info-links a {
 }
 .cta-top .cta-text h1 {
   margin-bottom: 40px;
+  text-align: center;
 }
 .cta-top .cta-text button {
   color: #6E6E6E;
@@ -283,8 +290,6 @@ footer .links .info-links a {
 }
 .cta-top .features {
   text-align: center;
-  max-width: 1300px;
-  margin: 0 auto;
 }
 .cta-top .feature-boxes {
   margin: 35px 10% 0;
@@ -299,10 +304,15 @@ footer .links .info-links a {
   color: #6E6E6E;
 }
 .cta-top .feature-boxes .feature-box img {
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 .testimonials {
   text-align: center;
+  padding: 80px 0 50px;
+  color: #3E3E3E;
+}
+.testimonials h2 {
+  color: #78C885;
 }
 .testimonials .quotes {
   display: flex;
