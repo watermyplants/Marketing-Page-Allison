@@ -2,7 +2,7 @@
 .cta-top {
     padding-top: 40px;
     padding-bottom: 40px;
-    background: linear-gradient(120deg, #99DE99 0%, #258D79 100%);
+    background: @bg-gradient;
 
     h1, h2 {
         color: white;
@@ -43,9 +43,7 @@
         .feature-box {
             width: 30%;
             padding: 36px 1.5%;
-            background-color: white;
-            border-radius: 15px;
-            color: @gray;
+            .feature-box(@gray);
 
             img {
                 margin-bottom: 5rem;

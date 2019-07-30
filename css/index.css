@@ -153,6 +153,12 @@ h1 {
 h2 {
   font-size: 3.2rem;
 }
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 1.8rem;
+}
 p {
   line-height: 1.4;
   font-size: 1.8rem;
@@ -300,8 +306,8 @@ footer .links .info-links a {
   width: 30%;
   padding: 36px 1.5%;
   background-color: white;
-  border-radius: 15px;
   color: #6E6E6E;
+  border-radius: 15px;
 }
 .cta-top .feature-boxes .feature-box img {
   margin-bottom: 5rem;
@@ -382,4 +388,62 @@ footer .links .info-links a {
   border: 1px solid #F9FF00;
   border-radius: 39px;
   padding: 17px 40px;
+}
+.about {
+  background: linear-gradient(120deg, #99DE99 0%, #258D79 100%);
+  padding: 50px 0;
+}
+.about p,
+.about h1,
+.about h2 {
+  margin-bottom: 15px;
+}
+.about h1,
+.about h2 {
+  color: white;
+}
+.about-wmp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-wmp .about-desc {
+  max-width: 90%;
+}
+.about-wmp img {
+  max-width: 45%;
+}
+.about-team {
+  max-width: 90%;
+  margin: 50px auto 0;
+  text-align: center;
+}
+.about-team .team-desc {
+  margin-bottom: 50px;
+}
+.about-team .team-members {
+  max-width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+.about-team .team-members .team-box {
+  background-color: white;
+  color: #258D79;
+  border-radius: 15px;
+  width: 220px;
+  height: 160px;
+  padding: 1%;
+  margin-bottom: 5%;
+}
+.about-team .team-members .team-box * {
+  margin-bottom: 10px;
+}
+.about-team .team-members .team-box h4 {
+  color: #6E6E6E;
+}
+.about-team .team-members .tb2,
+.about-team .team-members .tb5,
+.about-team .team-members .tb8 {
+  margin: 0 8%;
 }
