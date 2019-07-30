@@ -437,7 +437,7 @@ footer .links .info-links a {
 }
 .about-team .team-members {
   max-width: 75%;
-  max-height: 700px;
+  max-height: 800px;
   margin: 0 auto;
   display: flex;
   flex-flow: column wrap;
@@ -450,12 +450,17 @@ footer .links .info-links a {
   padding: 1%;
   box-shadow: 0 2px 2px #258D79;
   width: 220px;
-  height: 160px;
+  max-height: 200px;
   margin-bottom: 5%;
+  padding: 20px 0 10px;
 }
 .about-team .team-members .team-box * {
   margin-bottom: 10px;
 }
 .about-team .team-members .team-box h4 {
   color: #6E6E6E;
+}
+.about-team .team-members .team-box img {
+  max-width: 80px;
+  border-radius: 50%;
 }

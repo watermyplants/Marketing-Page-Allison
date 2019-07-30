@@ -55,7 +55,7 @@
 
     .team-members {
         max-width: 75%;
-        max-height: 700px;
+        max-height: 800px;
         margin: 0 auto;
         display: flex;
         flex-flow: column wrap;
@@ -66,8 +66,9 @@
             .box(@teal, 1%);
             box-shadow: 0 2px 2px @teal;
             width: 220px;
-            height: 160px;
+            max-height: 200px;
             margin-bottom: 5%;
+            padding: 20px 0 10px;
 
             * {
                 margin-bottom: 10px;
@@ -75,6 +76,11 @@
 
             h4 {
                 color: @gray;
+            }
+
+            img {
+                max-width: 80px;
+                border-radius: 50%;
             }
         }
     }
