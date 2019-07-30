@@ -564,6 +564,11 @@ footer .links .info-links a {
   background: linear-gradient(120deg, #99DE99 0%, #258D79 100%);
   padding: 50px 0 70px;
 }
+@media (max-width: 500px) {
+  .about-wmp {
+    padding: 50px 0;
+  }
+}
 .about-wmp h1,
 .about-wmp h2 {
   color: white;
@@ -577,6 +582,22 @@ footer .links .info-links a {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .about-wmp .container {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 500px) {
+  .about-wmp .container .about-text {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-wmp .container .about-text h1 {
+    margin-bottom: 25px;
+  }
+}
 .about-wmp .container .about-desc {
   max-width: 90%;
   background-color: white;
@@ -587,12 +608,22 @@ footer .links .info-links a {
 .about-wmp .container img {
   max-width: 45%;
 }
+@media (max-width: 500px) {
+  .about-wmp .container img {
+    max-width: 90%;
+  }
+}
 .about-team {
   margin: 50px auto 40px;
   text-align: center;
 }
 .about-team .container {
   width: 80%;
+}
+@media (max-width: 500px) {
+  .about-team .container {
+    width: inherit;
+  }
 }
 .about-team .team-desc {
   margin-bottom: 50px;
@@ -614,6 +645,12 @@ footer .links .info-links a {
   flex-flow: column wrap;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .about-team .team-members {
+    max-height: unset;
+    max-width: unset;
+  }
+}
 .about-team .team-members .team-box {
   background-color: white;
   color: #258D79;
@@ -624,6 +661,11 @@ footer .links .info-links a {
   max-height: 200px;
   margin-bottom: 5%;
   padding: 20px 0 10px;
+}
+@media (max-width: 500px) {
+  .about-team .team-members .team-box {
+    margin-bottom: 40px;
+  }
 }
 .about-team .team-members .team-box * {
   margin-bottom: 10px;
