@@ -63,12 +63,59 @@
         color: @seagreen;
     }
 
+    p {
+        font-size: 1.4rem;
+        line-height: 1.6;
+        z-index: 1;
+    }
+
+    img {
+        z-index: 0;
+    }
+
     .quotes {
         display: flex;
+        justify-content: space-evenly;
         align-items: flex-start;
 
+        .qb1 {
+            
+            p {
+                max-width: 270px;
+                .relative(-145px, 40px);
+            }
+
+            .portrait {
+                .relative(-90px, -70px);
+            }
+        }
+
         .qb2 {
-            align-self: flex-end;
+
+            p {
+                max-width: 270px;
+                .relative(-50px, 40px);
+            }
+
+            .bubble {
+                .relative(100px, 0);
+            }
+
+            .portrait {
+                .relative(10px, 100px);
+            }
+        }
+
+        .qb3 {
+            
+            p {
+                max-width: 320px;
+                .relative(-165px, 35px);
+            }
+
+            .portrait {
+                .relative(-115px, 40px);
+            }
         }
     }
 }

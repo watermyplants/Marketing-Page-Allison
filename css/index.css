@@ -314,12 +314,56 @@ footer .links .info-links a {
 .testimonials h2 {
   color: #78C885;
 }
+.testimonials p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  z-index: 1;
+}
+.testimonials img {
+  z-index: 0;
+}
 .testimonials .quotes {
   display: flex;
+  justify-content: space-evenly;
   align-items: flex-start;
 }
-.testimonials .quotes .qb2 {
-  align-self: flex-end;
+.testimonials .quotes .qb1 p {
+  max-width: 270px;
+  position: relative;
+  top: -145px;
+  left: 40px;
+}
+.testimonials .quotes .qb1 .portrait {
+  position: relative;
+  top: -90px;
+  left: -70px;
+}
+.testimonials .quotes .qb2 p {
+  max-width: 270px;
+  position: relative;
+  top: -50px;
+  left: 40px;
+}
+.testimonials .quotes .qb2 .bubble {
+  position: relative;
+  top: 100px;
+  left: 0;
+}
+.testimonials .quotes .qb2 .portrait {
+  position: relative;
+  top: 10px;
+  left: 100px;
+}
+.testimonials .quotes .qb3 p {
+  max-width: 320px;
+  position: relative;
+  top: -165px;
+  left: 35px;
+}
+.testimonials .quotes .qb3 .portrait {
+  position: relative;
+  top: -115px;
+  left: 40px;
 }
 .cta-bottom {
   display: flex;
