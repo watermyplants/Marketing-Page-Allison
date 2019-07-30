@@ -304,10 +304,10 @@ footer .links .info-links a {
 }
 .cta-top .feature-boxes .feature-box {
   width: 30%;
-  padding: 36px 1.5%;
   background-color: white;
   color: #6E6E6E;
   border-radius: 15px;
+  padding: 36px 1.5%;
 }
 .cta-top .feature-boxes .feature-box img {
   margin-bottom: 5rem;
@@ -389,51 +389,68 @@ footer .links .info-links a {
   border-radius: 39px;
   padding: 17px 40px;
 }
-.about {
+.about-wmp {
   background: linear-gradient(120deg, #99DE99 0%, #258D79 100%);
-  padding: 50px 0;
+  padding: 50px 0 70px;
 }
-.about p,
-.about h1,
-.about h2 {
-  margin-bottom: 15px;
-}
-.about h1,
-.about h2 {
+.about-wmp h1,
+.about-wmp h2 {
   color: white;
 }
-.about-wmp {
+.about-wmp p,
+.about-wmp h1 {
+  margin-bottom: 15px;
+}
+.about-wmp .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.about-wmp .about-desc {
+.about-wmp .container .about-desc {
   max-width: 90%;
+  background-color: white;
+  color: #556E64;
+  border-radius: 15px;
+  padding: 2%;
 }
-.about-wmp img {
+.about-wmp .container img {
   max-width: 45%;
 }
 .about-team {
-  max-width: 90%;
-  margin: 50px auto 0;
+  margin: 50px auto 40px;
   text-align: center;
+}
+.about-team .container {
+  width: 80%;
 }
 .about-team .team-desc {
   margin-bottom: 50px;
 }
+.about-team .team-desc h2 {
+  color: #78C885;
+  margin-bottom: 2.5rem;
+}
+.about-team .team-desc p {
+  max-width: 85%;
+  margin: 0 auto;
+  color: #6E6E6E;
+}
 .about-team .team-members {
   max-width: 75%;
+  max-height: 700px;
   margin: 0 auto;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  align-items: center;
 }
 .about-team .team-members .team-box {
   background-color: white;
   color: #258D79;
   border-radius: 15px;
+  padding: 1%;
+  box-shadow: 0 2px 2px #258D79;
   width: 220px;
   height: 160px;
-  padding: 1%;
   margin-bottom: 5%;
 }
 .about-team .team-members .team-box * {
@@ -441,9 +458,4 @@ footer .links .info-links a {
 }
 .about-team .team-members .team-box h4 {
   color: #6E6E6E;
-}
-.about-team .team-members .tb2,
-.about-team .team-members .tb5,
-.about-team .team-members .tb8 {
-  margin: 0 8%;
 }
