@@ -10,17 +10,26 @@ footer {
 
     a {
         color: white;
-        margin-left: 10px;
         font-weight: unset;
     }
 
     .container {
         display: flex;
         justify-content: space-between;
+
+        @media @phone {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;   
+        }
     }
 
     .contact {
         margin-bottom: 20px;
+
+        @media @phone {
+            order: 2;   
+        }
         
         address {
             margin-bottom: 10px;
@@ -33,9 +42,21 @@ footer {
 
     .copyright {
         align-self: flex-end;
+
+        @media @phone {
+            align-self: unset;
+            order: 3;   
+        }
     }
 
     .links {
+        width: 17rem;
+
+        @media @phone {
+            order: 1;
+            margin-bottom: 2rem;
+        }
+
         div {
             display: flex;
             justify-content: space-around;
@@ -47,6 +68,10 @@ footer {
 
         .info-links a {
             font-size: 1.0rem;
+
+            @media @phone {
+                font-size: 1.2rem;
+            }
         }
     }
     

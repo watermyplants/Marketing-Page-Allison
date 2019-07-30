@@ -285,15 +285,26 @@ footer p {
 }
 footer a {
   color: white;
-  margin-left: 10px;
   font-weight: unset;
 }
 footer .container {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 footer .contact {
   margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  footer .contact {
+    order: 2;
+  }
 }
 footer .contact address {
   margin-bottom: 10px;
@@ -304,6 +315,21 @@ footer .contact .phone-nums p {
 footer .copyright {
   align-self: flex-end;
 }
+@media (max-width: 500px) {
+  footer .copyright {
+    align-self: unset;
+    order: 3;
+  }
+}
+footer .links {
+  width: 17rem;
+}
+@media (max-width: 500px) {
+  footer .links {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+}
 footer .links div {
   display: flex;
   justify-content: space-around;
@@ -313,6 +339,11 @@ footer .links .social {
 }
 footer .links .info-links a {
   font-size: 1rem;
+}
+@media (max-width: 500px) {
+  footer .links .info-links a {
+    font-size: 1.2rem;
+  }
 }
 .cta-top {
   padding-top: 40px;
