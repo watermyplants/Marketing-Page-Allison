@@ -180,16 +180,35 @@ img {
   max-width: 1200px;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 100%;
+  }
+}
 .navigation .container {
   margin: 40px auto;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .navigation .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    margin-top: 25px;
+  }
+}
 .navigation .container .logo {
-  margin-left: 2%;
   display: flex;
-  flex-flow: row nowrap;
   align-items: flex-end;
+}
+@media (max-width: 500px) {
+  .navigation .container .logo {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
 }
 .navigation .container .logo h1 {
   color: #78C885;
@@ -200,13 +219,40 @@ img {
   line-height: 42px;
 }
 .navigation .container .nav-links {
-  margin-right: 2%;
   display: flex;
   align-items: flex-end;
+}
+@media (max-width: 500px) {
+  .navigation .container .nav-links {
+    display: unset;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .navigation .container .nav-links nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .navigation .container .nav-links a {
   color: #258D79;
   margin-left: 10px;
+}
+@media (max-width: 500px) {
+  .navigation .container .nav-links a {
+    width: 100%;
+    padding: 10px 0;
+    margin: unset;
+    text-align: center;
+    border-bottom: 1px solid #258D79;
+  }
+  .navigation .container .nav-links a:first-child {
+    border-top: 1px solid #258D79;
+  }
+  .navigation .container .nav-links a:last-child {
+    background-color: #258D79;
+  }
 }
 .navigation .container .nav-links .sign-in {
   color: #258D79;
@@ -214,6 +260,12 @@ img {
   border: 1px solid #258D79;
   border-radius: 2px;
   padding: 5px 24px;
+}
+@media (max-width: 500px) {
+  .navigation .container .nav-links .sign-in {
+    border: unset;
+    padding: unset;
+  }
 }
 .navigation .container .nav-links .sign-up {
   color: white;
@@ -277,6 +329,11 @@ footer .links .info-links a {
   justify-content: flex-start;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .cta-top .cta {
+    flex-direction: column;
+  }
+}
 .cta-top .cta-text {
   margin-left: 2%;
   display: flex;
@@ -316,6 +373,11 @@ footer .links .info-links a {
   text-align: center;
   padding: 80px 0 50px;
   color: #3E3E3E;
+}
+@media (max-width: 500px) {
+  .testimonials {
+    display: none;
+  }
 }
 .testimonials h2 {
   color: #78C885;

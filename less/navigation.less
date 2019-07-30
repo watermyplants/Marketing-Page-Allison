@@ -3,11 +3,23 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 0;
+        margin-top: 25px;
+    }
+
     .logo {
-        margin-left: 2%;
         display: flex;
-        flex-flow: row nowrap;
         align-items: flex-end;
+
+        @media @phone {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
 
         h1 {
             color: @seagreen;
@@ -20,17 +32,50 @@
     }
 
     .nav-links {
-        margin-right: 2%;
         display: flex;
         align-items: flex-end;
+
+        @media @phone {
+            display: unset;
+            width: 100%;
+        }
+
+        nav {
+
+            @media @phone {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
 
         a {
             color: @teal;
             margin-left: 10px;
+
+            @media @phone {
+                width: 100%;
+                padding: 10px 0;
+                margin: unset;
+                text-align: center;
+                border-bottom: 1px solid @teal;
+
+                &:first-child {
+                    border-top: 1px solid @teal;
+                }
+                &:last-child {
+                    background-color: @teal;
+                }
+            }
         }
 
         .sign-in {
             .button(@teal, white, 1px solid @teal, 2px, 5px 24px);
+
+            @media @phone {
+                border: unset;
+                padding: unset;
+            }
         }
 
         .sign-up {

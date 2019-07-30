@@ -13,6 +13,10 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+
+        @media @phone {
+            flex-direction: column;
+        }
     }
 
     .cta-text {
@@ -55,6 +59,11 @@
     text-align: center;
     padding: 80px 0 50px;
     color: @darkgray;
+
+    // TEMP
+    @media @phone {
+        display: none;  
+    }
     
     h2 {
         color: @seagreen;
