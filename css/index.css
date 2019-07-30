@@ -366,8 +366,20 @@ footer .links .info-links a {
   left: 40px;
 }
 .cta-bottom {
+  background-color: #258D79;
+  padding: 80px 0;
+  color: white;
+}
+.cta-bottom .container {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+}
+.cta-bottom button {
+  margin-left: 2%;
+  color: #F9FF00;
+  background-color: #258D79;
+  border: 1px solid #F9FF00;
+  border-radius: 39px;
+  padding: 17px 40px;
 }
