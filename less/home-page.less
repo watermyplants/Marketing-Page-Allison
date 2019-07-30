@@ -17,6 +17,14 @@
         @media @phone {
             flex-direction: column;
         }
+
+        img {
+
+            @media @phone {
+                max-width: 90%;
+                margin-bottom: 4rem;
+            }
+        }
     }
 
     .cta-text {
@@ -24,6 +32,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media @phone {
+            margin: 0 1%;
+        }
 
         h1 {
             margin-bottom: 40px;
@@ -44,12 +56,25 @@
         display: flex;
         justify-content: space-between;
 
+        @media @phone {
+            flex-direction: column;   
+        }
+
         .feature-box {
             width: 30%;
             .box(@gray, 36px 1.5%);
 
+            @media @phone {
+                width: 100%;
+                margin-bottom: 3rem;
+            }
+
             img {
                 margin-bottom: 5rem;
+
+                @media @phone {
+                    margin-bottom: 3rem;
+                }
             }
         }
     }
@@ -135,11 +160,22 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media @phone {
+            flex-direction: column;
+            text-align: center;
+            max-width: 80%;
+        }
     }
 
     button {
         margin-left: 2%;
         .button(@yellow, @teal, 1px solid @yellow, 39px, 17px 40px);
+
+        @media @phone {
+            margin-left: unset;
+            margin-top: 3rem;
+        }
     }
     
 }
