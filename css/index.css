@@ -254,7 +254,7 @@ img {
     align-items: center;
   }
 }
-@media (max-width: 630px) {
+@media (max-width: 660px) {
   .navigation .container .nav-links nav {
     width: 95%;
   }
@@ -342,6 +342,11 @@ footer .container {
 footer .contact {
   margin-bottom: 20px;
 }
+@media (max-width: 660px) {
+  footer .contact {
+    margin-bottom: 40px;
+  }
+}
 @media (max-width: 500px) {
   footer .contact {
     order: 2;
@@ -356,6 +361,12 @@ footer .contact .phone-nums p {
 footer .copyright {
   align-self: flex-end;
 }
+@media (max-width: 660px) {
+  footer .copyright {
+    max-width: 135px;
+    text-align: center;
+  }
+}
 @media (max-width: 500px) {
   footer .copyright {
     align-self: unset;
@@ -363,7 +374,7 @@ footer .copyright {
   }
 }
 footer .links {
-  width: 17rem;
+  width: 170px;
 }
 @media (max-width: 500px) {
   footer .links {

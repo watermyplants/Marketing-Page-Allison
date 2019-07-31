@@ -27,6 +27,10 @@ footer {
     .contact {
         margin-bottom: 20px;
 
+        @media @tablet-sm {
+            margin-bottom: 40px;
+        }
+
         @media @phone {
             order: 2;   
         }
@@ -43,6 +47,11 @@ footer {
     .copyright {
         align-self: flex-end;
 
+        @media @tablet-sm {
+            max-width: 135px;
+            text-align: center;
+        }
+
         @media @phone {
             align-self: unset;
             order: 3;   
@@ -50,7 +59,7 @@ footer {
     }
 
     .links {
-        width: 17rem;
+        width: 170px;
 
         @media @phone {
             order: 1;
