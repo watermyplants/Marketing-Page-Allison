@@ -624,7 +624,7 @@ footer .links .info-links a {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .cta-bottom .container {
     flex-direction: column;
     text-align: center;
@@ -643,7 +643,7 @@ footer .links .info-links a {
   color: #258D79;
   background-color: #F9FF00;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .cta-bottom button {
     margin-left: unset;
     margin-top: 3rem;
