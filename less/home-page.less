@@ -106,15 +106,19 @@
     padding: 80px 0 50px;
     color: @darkgray;
 
-    @media @phone {
-        padding: 5rem 0 0;
+    @media @desktop {
+        padding-bottom: 0;
+    }
+
+    @media @tablet-md {
+        padding-top: 50px;
     }
     
     h2 {
         color: @seagreen;
 
-        @media @phone {
-            margin-bottom: 6rem;
+        @media @desktop {
+            margin-bottom: 60px;
         }
     }
 
@@ -133,7 +137,11 @@
         justify-content: space-evenly;
         align-items: flex-start;
 
-        @media @phone {
+        @media @desktop{
+            flex-wrap: wrap;
+        }
+
+        @media @tablet-md {
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
@@ -157,7 +165,7 @@
                 max-width: 270px;
                 .relative(-50px, 45px);
 
-                @media @phone {
+                @media @tablet-md {
                     .relative(-150px, 45px);
                 }
             }
@@ -165,7 +173,7 @@
             .bubble {
                 .relative(100px, 0);
 
-                @media @phone {
+                @media @tablet-md {
                     position: unset;
                 }
             }
@@ -173,7 +181,7 @@
             .portrait {
                 .relative(10px, 100px);
 
-                @media @phone {
+                @media @tablet-md {
                     .relative(-80px, 100px);
                 }
             }
@@ -189,7 +197,7 @@
             .portrait {
                 .relative(-115px, 40px);
 
-                @media @phone {
+                @media @tablet-md {
                     .relative(-100px, 40px);
                 }
             }
