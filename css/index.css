@@ -303,6 +303,10 @@ img {
     border: unset;
     padding: unset;
   }
+  .navigation .container .nav-links .sign-in:hover {
+    color: #33c2a6;
+    background-color: white;
+  }
 }
 .navigation .container .nav-links .sign-up {
   color: white;
@@ -314,6 +318,12 @@ img {
 .navigation .container .nav-links .sign-up:hover {
   background-color: #F9FF00;
   color: #6E6E6E;
+}
+@media (max-width: 500px) {
+  .navigation .container .nav-links .sign-up:hover {
+    background-color: #258D79;
+    color: white;
+  }
 }
 footer {
   background-color: #556E64;

@@ -105,6 +105,12 @@
             @media @phone {
                 border: unset;
                 padding: unset;
+
+                &:hover {
+                    color: lighten(@nav-color, 13%);
+                    background-color: @nav-bg;
+                }
+                
             }
         }
 
@@ -114,6 +120,14 @@
             &:hover {
                 background-color: @cta-button-color;
                 color: @cta-text-color;
+            }
+
+            @media @phone {
+
+                &:hover {
+                    background-color: @nav-color;
+                    color: @nav-bg;
+                }
             }
         }
     }
