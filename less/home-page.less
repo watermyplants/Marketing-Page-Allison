@@ -5,7 +5,7 @@
     background: @bg-gradient;
 
     h1, h2 {
-        color: white;
+        color: @cta-heading-color;
     }
 
     .cta {
@@ -47,10 +47,10 @@
         }
 
         button {
-            .button(@gray, @yellow, 1px solid yellow, 39px, 18px 48px);
+            .button(@cta-text-color, @cta-button-color, 1px solid @cta-button-color, 39px, 18px 48px);
 
             &:hover {
-                color: @yellow;
+                color: @cta-button-color;
                 background-color: unset;
             }
         }
@@ -79,7 +79,7 @@
 
         .feature-box {
             width: 30%;
-            .box(@gray, 36px 2%);
+            .box(@cta-text-color, 36px 2%);
 
             @media @tablet-md {
                 width: 90%;
@@ -104,7 +104,7 @@
 .testimonials {
     text-align: center;
     padding: 80px 0 50px;
-    color: @darkgray;
+    color: @testimonials-text-color;
 
     @media @desktop {
         padding-bottom: 0;
@@ -115,7 +115,7 @@
     }
     
     h2 {
-        color: @seagreen;
+        color: @testimonials-heading-color;
 
         @media @desktop {
             margin-bottom: 60px;
@@ -206,9 +206,9 @@
 }
 
 .cta-bottom {
-    background-color: @teal;
+    background-color: @cta-bottom-bg;
     padding: 80px 0;
-    color: white;
+    color: @cta-heading-color;
 
     .container {
         display: flex;
@@ -224,11 +224,11 @@
 
     button {
         margin-left: 20px;
-        .button(@yellow, @teal, 1px solid @yellow, 39px, 17px 40px);
+        .button(@cta-button-color, @cta-bottom-bg, 1px solid @cta-button-color, 39px, 17px 40px);
 
         &:hover {
-            color: @teal;
-            background-color: @yellow;
+            color: @cta-bottom-bg;
+            background-color: @cta-button-color;
         }
 
         @media @tablet-lg {

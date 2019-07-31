@@ -29,8 +29,8 @@
         }
 
         h1 {
-            color: @seagreen;
-            font-family: 'Raleway', sans-serif;
+            color: @logo-color;
+            font-family: @logo-font;
             font-weight: 700;
             margin-left: 8px;
         }
@@ -71,11 +71,11 @@
         }
 
         a {
-            color: @teal;
+            color: @nav-color;
             margin-left: 10px;
 
             &:hover {
-                color: lighten(@teal, 13%);
+                color: lighten(@nav-color, 13%);
             }
 
             @media @phone {
@@ -83,23 +83,23 @@
                 padding: 10px 0;
                 margin: unset;
                 text-align: center;
-                border-bottom: 1px solid @teal;
+                border-bottom: 1px solid @nav-color;
 
                 &:first-child {
-                    border-top: 1px solid @teal;
+                    border-top: 1px solid @nav-color;
                 }
                 &:last-child {
-                    background-color: @teal;
+                    background-color: @nav-color;
                 }
             }
         }
 
         .sign-in {
-            .button(@teal, white, 1px solid @teal, 2px, 5px 24px);
+            .button(@teal, @nav-bg, 1px solid @nav-color, 2px, 5px 24px);
 
             &:hover {
-                color: white;
-                background-color: @teal;
+                color: @nav-bg;
+                background-color: @nav-color;
             }
 
             @media @phone {
@@ -109,11 +109,11 @@
         }
 
         .sign-up {
-            .button(white, @teal, none, 2px, 5px 24px);
+            .button(@nav-bg, @nav-color, none, 2px, 5px 24px);
 
             &:hover {
-                background-color: @yellow;
-                color: @gray;
+                background-color: @cta-button-color;
+                color: @cta-text-color;
             }
         }
     }

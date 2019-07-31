@@ -9,7 +9,7 @@
     }
 
     h1, h2 {
-        color: white;
+        color: @about-heading-color;
     }
 
     p, h1 {
@@ -41,7 +41,7 @@
 
         .about-desc {
             max-width: 90%;
-            .box(@darkstone, 2%);
+            .box(@about-text-color, 2%);
         }
     
         img {
@@ -72,14 +72,14 @@
         margin-bottom: 50px;
 
         h2 {
-            color: @seagreen;
+            color: @team-heading-color;
             margin-bottom: 2.5rem;
         }
         
         p {
             max-width: 85%;
             margin: 0 auto;
-            color: @gray;
+            color: @about-text-color;
         }
     }
 
@@ -97,8 +97,8 @@
         }
 
         .team-box {
-            .box(@teal, 1%);
-            box-shadow: 0 2px 2px @teal;
+            .box(@team-box-color, 1%);
+            box-shadow: 0 2px 2px @team-box-color;
             width: 220px;
             max-height: 200px;
             margin-bottom: 5%;
@@ -113,7 +113,7 @@
             }
 
             h4 {
-                color: @gray;
+                color: @about-text-color;
             }
 
             img {
@@ -130,7 +130,7 @@
                     left: -2px;
                     font-size: 100px;
                     opacity: 0;
-                    color: @teal;
+                    color: @team-box-color;
 
                     &:hover{
                         opacity: 1.0;
