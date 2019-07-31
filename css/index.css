@@ -632,7 +632,7 @@ footer .links .info-links a {
   }
 }
 .cta-bottom button {
-  margin-left: 2%;
+  margin-left: 20px;
   color: #F9FF00;
   background-color: #258D79;
   border: 1px solid #F9FF00;
@@ -646,7 +646,7 @@ footer .links .info-links a {
 @media (max-width: 900px) {
   .cta-bottom button {
     margin-left: unset;
-    margin-top: 3rem;
+    margin-top: 30px;
   }
 }
 .about-wmp {
