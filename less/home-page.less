@@ -43,7 +43,12 @@
         }
 
         button {
-            .button(@gray, @yellow, none, 39px, 18px 48px)
+            .button(@gray, @yellow, 1px solid yellow, 39px, 18px 48px);
+
+            &:hover {
+                color: @yellow;
+                background-color: unset;
+            }
         }
     }
 
@@ -196,6 +201,11 @@
     button {
         margin-left: 2%;
         .button(@yellow, @teal, 1px solid @yellow, 39px, 17px 40px);
+
+        &:hover {
+            color: @teal;
+            background-color: @yellow;
+        }
 
         @media @phone {
             margin-left: unset;

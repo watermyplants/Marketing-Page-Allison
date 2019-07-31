@@ -237,6 +237,9 @@ img {
   color: #258D79;
   margin-left: 10px;
 }
+.navigation .container .nav-links a:hover {
+  color: #33c2a6;
+}
 @media (max-width: 500px) {
   .navigation .container .nav-links a {
     width: 100%;
@@ -259,6 +262,10 @@ img {
   border-radius: 2px;
   padding: 5px 24px;
 }
+.navigation .container .nav-links .sign-in:hover {
+  color: white;
+  background-color: #258D79;
+}
 @media (max-width: 500px) {
   .navigation .container .nav-links .sign-in {
     border: unset;
@@ -271,6 +278,10 @@ img {
   border: none;
   border-radius: 2px;
   padding: 5px 24px;
+}
+.navigation .container .nav-links .sign-up:hover {
+  background-color: #F9FF00;
+  color: #6E6E6E;
 }
 footer {
   background-color: #556E64;
@@ -387,9 +398,13 @@ footer .links .info-links a {
 .cta-top .cta-text button {
   color: #6E6E6E;
   background-color: #F9FF00;
-  border: none;
+  border: 1px solid yellow;
   border-radius: 39px;
   padding: 18px 48px;
+}
+.cta-top .cta-text button:hover {
+  color: #F9FF00;
+  background-color: unset;
 }
 .cta-top .features {
   text-align: center;
@@ -552,6 +567,10 @@ footer .links .info-links a {
   border-radius: 39px;
   padding: 17px 40px;
 }
+.cta-bottom button:hover {
+  color: #258D79;
+  background-color: #F9FF00;
+}
 @media (max-width: 500px) {
   .cta-bottom button {
     margin-left: unset;
@@ -674,4 +693,18 @@ footer .links .info-links a {
 .about-team .team-members .team-box img {
   max-width: 80px;
   border-radius: 50%;
+}
+.about-team .team-members .team-box a {
+  position: relative;
+}
+.about-team .team-members .team-box a .fa-github {
+  position: absolute;
+  top: -82px;
+  left: -2px;
+  font-size: 100px;
+  opacity: 0;
+  color: #258D79;
+}
+.about-team .team-members .team-box a .fa-github:hover {
+  opacity: 1;
 }

@@ -95,7 +95,6 @@
             max-height: unset;
             max-width: unset;
         }
-            
 
         .team-box {
             .box(@teal, 1%);
@@ -120,6 +119,23 @@
             img {
                 max-width: 80px;
                 border-radius: 50%;
+            }
+
+            a {
+                position: relative;
+
+                .fa-github {
+                    position: absolute;
+                    top: -82px;
+                    left: -2px;
+                    font-size: 100px;
+                    opacity: 0;
+                    color: @teal;
+
+                    &:hover{
+                        opacity: 1.0;
+                    }
+                }
             }
         }
     }

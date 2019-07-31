@@ -51,6 +51,10 @@
             color: @teal;
             margin-left: 10px;
 
+            &:hover {
+                color: lighten(@teal, 13%);
+            }
+
             @media @phone {
                 width: 100%;
                 padding: 10px 0;
@@ -70,6 +74,11 @@
         .sign-in {
             .button(@teal, white, 1px solid @teal, 2px, 5px 24px);
 
+            &:hover {
+                color: white;
+                background-color: @teal;
+            }
+
             @media @phone {
                 border: unset;
                 padding: unset;
@@ -78,6 +87,11 @@
 
         .sign-up {
             .button(white, @teal, none, 2px, 5px 24px);
+
+            &:hover {
+                background-color: @yellow;
+                color: @gray;
+            }
         }
     }
 }
