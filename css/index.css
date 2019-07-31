@@ -482,7 +482,7 @@ footer .links .info-links a {
   max-width: 270px;
   position: relative;
   top: -145px;
-  left: 40px;
+  left: 45px;
 }
 .testimonials .quotes .qb1 .portrait {
   position: relative;
@@ -493,13 +493,13 @@ footer .links .info-links a {
   max-width: 270px;
   position: relative;
   top: -50px;
-  left: 40px;
+  left: 45px;
 }
 @media (max-width: 500px) {
   .testimonials .quotes .qb2 p {
     position: relative;
     top: -150px;
-    left: 40px;
+    left: 45px;
   }
 }
 .testimonials .quotes .qb2 .bubble {
@@ -528,7 +528,7 @@ footer .links .info-links a {
   max-width: 320px;
   position: relative;
   top: -165px;
-  left: 35px;
+  left: 40px;
 }
 .testimonials .quotes .qb3 .portrait {
   position: relative;
