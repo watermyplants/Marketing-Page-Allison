@@ -14,17 +14,17 @@
         justify-content: flex-start;
         align-items: center;
 
-        @media @phone {
+        @media @tablet-md {
             flex-direction: column;
         }
 
         img {
 
             @media @desktop {
-                max-width: 60%;
+                max-width: 50%;
             }
 
-            @media @phone {
+            @media @tablet-md {
                 max-width: 90%;
                 margin-bottom: 4rem;
             }
@@ -37,7 +37,7 @@
         flex-direction: column;
         align-items: center;
 
-        @media @phone {
+        @media @tablet-md {
             margin: 0 1%;
         }
 
@@ -65,24 +65,36 @@
         display: flex;
         justify-content: space-between;
 
-        @media @phone {
-            flex-direction: column;   
+        @media @desktop {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        @media @tablet-md {
+            flex-direction: column; 
+            align-items: center;
+            margin-left: 10%;
+            margin-right: 10%;
         }
 
         .feature-box {
             width: 30%;
-            .box(@gray, 36px 1.5%);
+            .box(@gray, 36px 2%);
 
-            @media @phone {
-                width: 100%;
+            @media @tablet-md {
+                width: 90%;
                 margin-bottom: 3rem;
             }
 
-            img {
-                margin-bottom: 5rem;
+            @media @phone {
+                width: 100%;
+            }
 
-                @media @phone {
-                    margin-bottom: 3rem;
+            img {
+                margin-bottom: 50px;
+
+                @media @desktop {
+                    margin-bottom: 30px;
                 }
             }
         }
