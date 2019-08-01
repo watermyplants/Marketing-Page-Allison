@@ -222,6 +222,7 @@ img {
   .navigation .container .logo {
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
   }
 }
 .navigation .container .logo h1 {
@@ -229,6 +230,11 @@ img {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   margin-left: 8px;
+}
+@media (max-width: 500px) {
+  .navigation .container .logo h1 {
+    margin-top: 8px;
+  }
 }
 .navigation .container .nav-links {
   display: flex;
@@ -804,11 +810,6 @@ footer .links .info-links a {
     max-width: 90%;
   }
 }
-@media (max-width: 1300px) {
-  .about-team .team-members {
-    max-width: 100%;
-  }
-}
 @media (max-width: 1000px) {
   .about-team .team-members {
     max-height: 1000px;
@@ -831,7 +832,8 @@ footer .links .info-links a {
   border-radius: 15px;
   padding: 1%;
   box-shadow: 0 2px 2px #258d79;
-  width: 220px;
+  min-width: 220px;
+  width: 30%;
   max-height: 200px;
   margin-bottom: 5%;
   padding: 20px 0 10px;
