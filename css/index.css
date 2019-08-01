@@ -144,7 +144,7 @@ h4,
 h5,
 a,
 button {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
 }
 h1 {
@@ -162,7 +162,7 @@ h4 {
 p {
   line-height: 1.4;
   font-size: 1.8rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 a,
 button {
@@ -225,8 +225,8 @@ img {
   }
 }
 .navigation .container .logo h1 {
-  color: #78C885;
-  font-family: 'Raleway', sans-serif;
+  color: #78c885;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   margin-left: 8px;
 }
@@ -266,7 +266,7 @@ img {
   }
 }
 .navigation .container .nav-links a {
-  color: #258D79;
+  color: #258d79;
   margin-left: 10px;
 }
 .navigation .container .nav-links a:hover {
@@ -278,25 +278,25 @@ img {
     padding: 10px 0;
     margin: unset;
     text-align: center;
-    border-bottom: 1px solid #258D79;
+    border-bottom: 1px solid #258d79;
   }
   .navigation .container .nav-links a:first-child {
-    border-top: 1px solid #258D79;
+    border-top: 1px solid #258d79;
   }
   .navigation .container .nav-links a:last-child {
-    background-color: #258D79;
+    background-color: #258d79;
   }
 }
 .navigation .container .nav-links .sign-in {
-  color: #258D79;
+  color: #258d79;
   background-color: white;
-  border: 1px solid #258D79;
+  border: 1px solid #258d79;
   border-radius: 2px;
   padding: 5px 24px;
 }
 .navigation .container .nav-links .sign-in:hover {
   color: white;
-  background-color: #258D79;
+  background-color: #258d79;
 }
 @media (max-width: 500px) {
   .navigation .container .nav-links .sign-in {
@@ -310,23 +310,23 @@ img {
 }
 .navigation .container .nav-links .sign-up {
   color: white;
-  background-color: #258D79;
+  background-color: #258d79;
   border: none;
   border-radius: 2px;
   padding: 5px 24px;
 }
 .navigation .container .nav-links .sign-up:hover {
-  background-color: #F9FF00;
-  color: #6E6E6E;
+  background-color: #f9ff00;
+  color: #6e6e6e;
 }
 @media (max-width: 500px) {
   .navigation .container .nav-links .sign-up:hover {
-    background-color: #258D79;
+    background-color: #258d79;
     color: white;
   }
 }
 footer {
-  background-color: #556E64;
+  background-color: #556e64;
   color: white;
   padding: 20px 2% 12px;
 }
@@ -410,7 +410,7 @@ footer .links .info-links a {
 .cta-top {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: linear-gradient(120deg, #99DE99 0%, #258D79 100%);
+  background: linear-gradient(120deg, #99de99 0%, #258d79 100%);
 }
 .cta-top h1,
 .cta-top h2 {
@@ -454,14 +454,14 @@ footer .links .info-links a {
   text-align: center;
 }
 .cta-top .cta-text button {
-  color: #6E6E6E;
-  background-color: #F9FF00;
-  border: 1px solid #F9FF00;
+  color: #6e6e6e;
+  background-color: #f9ff00;
+  border: 1px solid #f9ff00;
   border-radius: 39px;
   padding: 18px 48px;
 }
 .cta-top .cta-text button:hover {
-  color: #F9FF00;
+  color: #f9ff00;
   background-color: unset;
 }
 .cta-top .features {
@@ -489,7 +489,7 @@ footer .links .info-links a {
 .cta-top .feature-boxes .feature-box {
   width: 30%;
   background-color: white;
-  color: #6E6E6E;
+  color: #6e6e6e;
   border-radius: 15px;
   padding: 36px 2%;
 }
@@ -515,7 +515,7 @@ footer .links .info-links a {
 .testimonials {
   text-align: center;
   padding: 80px 0 50px;
-  color: #3E3E3E;
+  color: #3e3e3e;
 }
 @media (max-width: 1300px) {
   .testimonials {
@@ -528,7 +528,7 @@ footer .links .info-links a {
   }
 }
 .testimonials h2 {
-  color: #78C885;
+  color: #78c885;
 }
 @media (max-width: 1300px) {
   .testimonials h2 {
@@ -672,7 +672,7 @@ footer .links .info-links a {
   }
 }
 .cta-bottom {
-  background-color: #258D79;
+  background-color: #258d79;
   padding: 80px 0;
   color: white;
 }
@@ -690,15 +690,15 @@ footer .links .info-links a {
 }
 .cta-bottom button {
   margin-left: 20px;
-  color: #F9FF00;
-  background-color: #258D79;
-  border: 1px solid #F9FF00;
+  color: #f9ff00;
+  background-color: #258d79;
+  border: 1px solid #f9ff00;
   border-radius: 39px;
   padding: 17px 40px;
 }
 .cta-bottom button:hover {
-  color: #258D79;
-  background-color: #F9FF00;
+  color: #258d79;
+  background-color: #f9ff00;
 }
 @media (max-width: 900px) {
   .cta-bottom button {
@@ -707,7 +707,7 @@ footer .links .info-links a {
   }
 }
 .about-wmp {
-  background: linear-gradient(120deg, #99DE99 0%, #258D79 100%);
+  background: linear-gradient(120deg, #99de99 0%, #258d79 100%);
   padding: 50px 0 70px;
 }
 @media (max-width: 900px) {
@@ -749,7 +749,7 @@ footer .links .info-links a {
 .about-wmp .container .about-desc {
   max-width: 90%;
   background-color: white;
-  color: #6E6E6E;
+  color: #6e6e6e;
   border-radius: 15px;
   padding: 2%;
 }
@@ -782,13 +782,13 @@ footer .links .info-links a {
   margin-bottom: 50px;
 }
 .about-team .team-desc h2 {
-  color: #78C885;
+  color: #78c885;
   margin-bottom: 25px;
 }
 .about-team .team-desc p {
   max-width: 85%;
   margin: 0 auto;
-  color: #6E6E6E;
+  color: #6e6e6e;
 }
 .about-team .team-members {
   max-width: 75%;
@@ -827,10 +827,10 @@ footer .links .info-links a {
 }
 .about-team .team-members .team-box {
   background-color: white;
-  color: #258D79;
+  color: #258d79;
   border-radius: 15px;
   padding: 1%;
-  box-shadow: 0 2px 2px #258D79;
+  box-shadow: 0 2px 2px #258d79;
   width: 220px;
   max-height: 200px;
   margin-bottom: 5%;
@@ -850,7 +850,7 @@ footer .links .info-links a {
   margin-bottom: 10px;
 }
 .about-team .team-members .team-box h4 {
-  color: #6E6E6E;
+  color: #6e6e6e;
 }
 .about-team .team-members .team-box img {
   max-width: 80px;
@@ -865,7 +865,7 @@ footer .links .info-links a {
   left: -2px;
   font-size: 100px;
   opacity: 0;
-  color: #258D79;
+  color: #258d79;
 }
 .about-team .team-members .team-box a .fa-github:hover {
   opacity: 1;
