@@ -22,6 +22,7 @@
 
         @media @tablet-lg {
             flex-direction: column-reverse;
+            max-width: 90%;
         }
         
         .about-text {
@@ -31,6 +32,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                text-align: center;
 
                 h1 {
                     margin-bottom: 25px;
@@ -41,13 +43,17 @@
         .about-desc {
             max-width: 90%;
             .box(@about-text-color, 2%);
+
+            @media @tablet-lg {
+                max-width: 100%;
+            }
         }
     
         img {
             max-width: 45%;
 
             @media @tablet-lg {
-                max-width: 90%;
+                max-width: 100%;
             }
         }
     }

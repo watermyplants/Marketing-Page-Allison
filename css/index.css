@@ -540,6 +540,11 @@ footer .links .info-links a {
   line-height: 1.6;
   z-index: 1;
 }
+@media (max-width: 400px) {
+  .testimonials p {
+    font-size: 1.3rem;
+  }
+}
 .testimonials img {
   z-index: 0;
 }
@@ -557,7 +562,12 @@ footer .links .info-links a {
   .testimonials .quotes {
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+  }
+}
+@media (max-width: 400px) {
+  .testimonials .quotes {
+    max-width: 95%;
+    margin: 0 auto;
   }
 }
 .testimonials .quotes .qb1 p {
@@ -565,6 +575,14 @@ footer .links .info-links a {
   position: relative;
   top: -145px;
   left: 45px;
+}
+@media (max-width: 400px) {
+  .testimonials .quotes .qb1 p {
+    width: 65%;
+    position: relative;
+    top: -140px;
+    left: 60px;
+  }
 }
 .testimonials .quotes .qb1 .portrait {
   position: relative;
@@ -582,6 +600,14 @@ footer .links .info-links a {
     position: relative;
     top: -150px;
     left: 45px;
+  }
+}
+@media (max-width: 400px) {
+  .testimonials .quotes .qb2 p {
+    width: 70%;
+    position: relative;
+    top: -140px;
+    left: 58px;
   }
 }
 .testimonials .quotes .qb2 .bubble {
@@ -606,11 +632,27 @@ footer .links .info-links a {
     left: 100px;
   }
 }
+@media (max-width: 400px) {
+  .testimonials .quotes .qb2 .portrait {
+    position: relative;
+    top: -60px;
+    left: 100px;
+  }
+}
 .testimonials .quotes .qb3 p {
   max-width: 320px;
   position: relative;
   top: -165px;
   left: 40px;
+}
+@media (max-width: 400px) {
+  .testimonials .quotes .qb3 p {
+    width: 70%;
+    font-size: 1.2rem;
+    position: relative;
+    top: -145px;
+    left: 55px;
+  }
 }
 .testimonials .quotes .qb3 .portrait {
   position: relative;
@@ -622,6 +664,11 @@ footer .links .info-links a {
     position: relative;
     top: -100px;
     left: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .testimonials .quotes .bubble {
+    max-width: 95%;
   }
 }
 .cta-bottom {
@@ -684,6 +731,7 @@ footer .links .info-links a {
 @media (max-width: 900px) {
   .about-wmp .container {
     flex-direction: column-reverse;
+    max-width: 90%;
   }
 }
 @media (max-width: 900px) {
@@ -692,6 +740,7 @@ footer .links .info-links a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   .about-wmp .container .about-text h1 {
     margin-bottom: 25px;
@@ -704,12 +753,17 @@ footer .links .info-links a {
   border-radius: 15px;
   padding: 2%;
 }
+@media (max-width: 900px) {
+  .about-wmp .container .about-desc {
+    max-width: 100%;
+  }
+}
 .about-wmp .container img {
   max-width: 45%;
 }
 @media (max-width: 900px) {
   .about-wmp .container img {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 .about-team {
