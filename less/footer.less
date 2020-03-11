@@ -1,9 +1,7 @@
 footer {
     background-color: @footer-bg;
-    color: white;
-    padding: 2%;
-    display: flex;
-    justify-content: space-between;
+    color: @footer-text;
+    padding: 20px 2% 12px;
 
     p {
         line-height: 1.7;
@@ -11,13 +9,31 @@ footer {
     }
 
     a {
-        color: white;
-        margin-left: 10px;
+        color: @footer-text;
         font-weight: unset;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        @media @phone {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;   
+        }
     }
 
     .contact {
         margin-bottom: 20px;
+
+        @media @tablet-sm {
+            margin-bottom: 40px;
+        }
+
+        @media @phone {
+            order: 2;   
+        }
         
         address {
             margin-bottom: 10px;
@@ -30,9 +46,26 @@ footer {
 
     .copyright {
         align-self: flex-end;
+
+        @media @tablet-sm {
+            max-width: 135px;
+            text-align: center;
+        }
+
+        @media @phone {
+            align-self: unset;
+            order: 3;   
+        }
     }
 
     .links {
+        width: 170px;
+
+        @media @phone {
+            order: 1;
+            margin-bottom: 2rem;
+        }
+
         div {
             display: flex;
             justify-content: space-around;
@@ -44,6 +77,10 @@ footer {
 
         .info-links a {
             font-size: 1.0rem;
+
+            @media @phone {
+                font-size: 1.2rem;
+            }
         }
     }
     

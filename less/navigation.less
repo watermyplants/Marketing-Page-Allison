@@ -1,40 +1,140 @@
-.navigation {
-    margin: 40px 0;
+// Navigation bar styles
+.navigation .container {
+    margin: 40px auto;
     display: flex;
     justify-content: space-between;
 
+    @media @tablet-lg {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    @media @phone {
+        justify-content: flex-start;
+        margin-bottom: 0;
+        margin-top: 25px;
+    }
+
     .logo {
-        margin-left: 2%;
         display: flex;
-        flex-flow: row nowrap;
-        align-items: flex-end;
+        align-items: center;
+
+        @media @tablet-lg {
+            margin-bottom: 30px;
+        }
+
+        @media @phone {
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
         h1 {
-            color: @seagreen;
-            font-family: Raleway;
-            font-size: 3.6rem;
-            font-weight: bold;
-            margin-left: 5px;
-            line-height: 42px;
+            color: @logo-color;
+            font-family: @logo-font;
+            font-weight: 700;
+            margin-left: 8px;
+
+            @media @phone {
+                margin-top: 8px;
+            }
         }
     }
 
     .nav-links {
-        margin-right: 2%;
         display: flex;
         align-items: flex-end;
 
+        @media @tablet-lg {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media @phone {
+            display: unset;
+        }
+
+        nav {
+
+            @media @tablet-lg {
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+
+            @media @tablet-sm {
+                width: 95%;
+            }
+
+            @media @phone {
+                width: unset;
+                flex-direction: column;
+            }
+        }
+
         a {
-            color: @teal;
+            color: @nav-color;
             margin-left: 10px;
+
+            &:hover {
+                color: lighten(@nav-color, 13%);
+            }
+
+            @media @phone {
+                width: 100%;
+                padding: 10px 0;
+                margin: unset;
+                text-align: center;
+                border-bottom: 1px solid @nav-color;
+
+                &:first-child {
+                    border-top: 1px solid @nav-color;
+                }
+                &:last-child {
+                    background-color: @nav-color;
+                }
+            }
         }
 
         .sign-in {
-            .button(@teal, white, 1px solid @teal, 2px, 5px 24px);
+            .button(@teal, @nav-bg, 1px solid @nav-color, 2px, 5px 24px);
+
+            &:hover {
+                color: @nav-bg;
+                background-color: @nav-color;
+            }
+
+            @media @phone {
+                border: unset;
+                padding: unset;
+
+                &:hover {
+                    color: lighten(@nav-color, 13%);
+                    background-color: @nav-bg;
+                }
+                
+            }
         }
 
         .sign-up {
-            .button(white, @teal, none, 2px, 5px 24px);
+            .button(@nav-bg, @nav-color, none, 2px, 5px 24px);
+
+            &:hover {
+                background-color: @cta-button-color;
+                color: @cta-text-color;
+            }
+
+            @media @phone {
+
+                &:hover {
+                    background-color: @nav-color;
+                    color: @nav-bg;
+                }
+            }
         }
     }
 }

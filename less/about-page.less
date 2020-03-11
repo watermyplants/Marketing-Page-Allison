@@ -1,0 +1,165 @@
+// About page styles
+.about-wmp {
+    background: @bg-gradient;
+    padding: 50px 0 70px;
+
+    @media @tablet-lg {
+        padding: 50px 0;
+    }
+
+    h1, h2 {
+        color: @about-heading-color;
+    }
+
+    p, h1 {
+        margin-bottom: 15px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media @tablet-lg {
+            flex-direction: column-reverse;
+            max-width: 90%;
+        }
+        
+        .about-text {
+
+            @media @tablet-lg {
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                h1 {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+        .about-desc {
+            max-width: 90%;
+            .box(@about-text-color, 2%);
+
+            @media @tablet-lg {
+                max-width: 100%;
+            }
+        }
+    
+        img {
+            max-width: 45%;
+
+            @media @tablet-lg {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+
+.about-team {
+    margin: 50px auto 40px;
+    text-align: center;
+
+    .container {
+        width: 80%;
+
+        @media @tablet-sm {
+            width: inherit;
+        }
+    }
+
+    .team-desc {
+        margin-bottom: 50px;
+
+        h2 {
+            color: @team-heading-color;
+            margin-bottom: 25px;
+        }
+        
+        p {
+            max-width: 85%;
+            margin: 0 auto;
+            color: @about-text-color;
+        }
+    }
+
+    .team-members {
+        max-width: 75%;
+        max-height: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        @media @desktop {
+            max-width: 90%;
+        }
+
+        @media (max-width: 1000px) {
+            max-height: 1000px;
+            max-width: 80%;
+        }
+
+        @media @tablet-md {
+            max-width: unset;
+        }
+
+        @media @tablet-sm {
+            max-height: unset;
+        }
+
+        .team-box {
+            .box(@team-box-color, 1%);
+            box-shadow: 0 2px 2px @team-box-color;
+            min-width: 220px;
+            width: 30%;
+            max-height: 200px;
+            margin-bottom: 5%;
+            padding: 20px 0 10px;
+
+            @media @tablet-sm {
+                width: 60%;
+            }
+
+            @media @phone {
+                margin-bottom: 40px;
+            }
+
+            * {
+                margin-bottom: 10px;
+            }
+
+            h4 {
+                color: @about-text-color;
+            }
+
+            img {
+                max-width: 80px;
+                border-radius: 50%;
+            }
+
+            a {
+                position: relative;
+
+                .fa-github {
+                    position: absolute;
+                    top: -82px;
+                    left: -2px;
+                    font-size: 100px;
+                    opacity: 0;
+                    color: @team-box-color;
+
+                    &:hover{
+                        opacity: 1.0;
+                    }
+                }
+            }
+        }
+    }
+}
